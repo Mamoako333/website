@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hungry Haven - Food Delivery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" style="background-color: #EAE1E1;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <!-- <img src="images/logo.png" alt="The Hungry Haven" height="40"> -->
+                <h3 style="color:#C324DB; text-shadow: 2px 2px 4px #999; font-weight:bold;">The Hungry Haven</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#restaurants">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#deals">Deals</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="cart.html" class="btn btn-light me-2">
+                        <i class="fas fa-shopping-cart"></i> Cart
+                    </a>
+                    <a href="login.html" class="btn btn-outline-light">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section" id="home">
+        <div class="container text-center py-5">
+            <h1 class="display-4 fw-bold text-white" style="color:#C324DB; text-shadow: 2px 2px 4px #999; font-weight:bold;" >Delicious Food Delivered to Your Door</h1>
+            <p class="lead text-white">Order from your favorite local restaurants</p>
+            <div class="search-bar mt-4 mx-auto" style="max-width: 600px;">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for restaurants or dishes...">
+                    <button class="btn btn-warning" type="button">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Categories Section -->
+    <section class="py-5 bg-light" id="categories">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color:#C324DB; text-shadow: 2px 2px 4px #999; font-weight:bold;" >Categories</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card category-card h-100">
+                        <img src="/images/dinner.png" class="card-img-top" alt="Dinner">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#C324DB ;" >Dinner</h5>
+                            <p class="card-text">Heart meals for the evening</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card category-card h-100">
+                        <img src="/images/bugger.png" class="card-img-top" alt="Quick Bites">
+                        <div class="card-body">
+                            <h5 class="card-title">Quick Bites</h5>
+                            <p class="card-text">Fast and delicious options</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card category-card h-100">
+                        <img src="/images/desserts.png" class="card-img-top" alt="Desserts">
+                        <div class="card-body">
+                            <h5 class="card-title">Desserts</h5>
+                            <p class="card-text">Sweet treats to finish your meal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurants Nearby Section -->
+    <section class="py-5" id="restaurants">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color:#C324DB; text-shadow: 2px 2px 4px #999; font-weight:bold;">Restaurants Nearby</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card restaurant-card h-100">
+                        <img src="/images/rest1.png" class="card-img-top" alt="Ria May Round">
+                        <div class="card-body">
+                            <h5 class="card-title">Ria May Round</h5>
+                            <p class="text-muted">Local Chicago Favorites</p>
+                            <p class="card-text">S$5 delivery fee</p>
+                            <div class="rating">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                                <span class="ms-2">4.5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card restaurant-card h-100">
+                        <img src="/images/rest2.png" class="card-img-top" alt="Palate's Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title">Palate's Pizza</h5>
+                            <p class="text-muted">Trending Tastes</p>
+                            <p class="card-text">Free delivery</p>
+                            <div class="rating">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-warning"></i>
+                                <span class="ms-2">4.0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card restaurant-card h-100">
+                        <img src="/images/rest1.png" class="card-img-top" alt="Burger Boys">
+                        <div class="card-body">
+                            <h5 class="card-title">Burger Boys</h5>
+                            <p class="text-muted">Trending Tastes</p>
+                            <p class="card-text">S$3 delivery fee</p>
+                            <div class="rating">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="ms-2">5.0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card restaurant-card h-100">
+                        <img src="/images/rest2.png" class="card-img-top" alt="Mum's Kitchen">
+                        <div class="card-body">
+                            <h5 class="card-title">Mum's Kitchen</h5>
+                            <p class="text-muted">Home-style cooking</p>
+                            <p class="card-text">S$4 delivery fee</p>
+                            <div class="rating">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-warning"></i>
+                                <span class="ms-2">4.0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Dish Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="/images/salad.jpeg" alt="Green Goddess Salad" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <h2>Green Goddess Salad</h2>
+                    <p class="lead">From Salad's Galore</p>
+                    <p>A refreshing mix of fresh greens, vegetables, and your choice of protein.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success me-2"></i> Spinach</li>
+                        <li><i class="fas fa-check text-success me-2"></i> Tomatoes</li>
+                        <li><i class="fas fa-check text-success me-2"></i> Peppers</li>
+                        <li><i class="fas fa-check text-success me-2"></i> Oil and Vinegar</li>
+                        <li><i class="fas fa-check text-success me-2"></i> Cheese</li>
+                        <li><i class="fas fa-check text-success me-2"></i> Bacon</li>
+                        <li><i class="fas fa-check text-success me-2"></i> Chicken</li>
+                    </ul>
+                    <div class="d-flex align-items-center mb-3">
+                        <h4 class="mb-0 me-3">$12.99</h4>
+                        <div class="input-group" style="width: 120px;">
+                            <button class="btn btn-outline-secondary" type="button">-</button>
+                            <input type="text" class="form-control text-center" value="1">
+                            <button class="btn btn-outline-secondary" type="button">+</button>
+                        </div>
+                    </div>
+                    <button class="btn btn-success btn-lg me-2">Add to Cart</button>
+                    <button class="btn btn-outline-secondary btn-lg">Save for Later</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Game Section -->
+    <section class="py-5" id="game">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color:#C324DB; text-shadow: 2px 2px 4px #999; font-weight:bold;">Food Matching Game</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="game-container p-4 bg-light rounded">
+                        <div id="game-board" class="row g-3"></div>
+                        <div class="text-center mt-4">
+                            <p>Score: <span id="score">0</span></p>
+                            <button id="restart-btn" class="btn btn-warning">Restart Game</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section class="py-5 bg-success text-white" id="deals">
+        <div class="container">
+            <h2 class="text-center mb-5"style="color:#C324DB; text-shadow: 2px 2px 4px #999; font-weight:bold;" >Deals</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card deal-card h-100 border-0">
+                        <div class="card-body text-center p-4">
+                            <h3 class="text-success">20% OFF</h3>
+                            <p class="card-text">First order with The Hungry Haven</p>
+                            <small class="text-muted">Use code: WELCOME20</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card deal-card h-100 border-0">
+                        <div class="card-body text-center p-4">
+                            <h3 class="text-success">FREE DELIVERY</h3>
+                            <p class="card-text">On orders over $25</p>
+                            <small class="text-muted">Valid for 30 days</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card deal-card h-100 border-0">
+                        <div class="card-body text-center p-4">
+                            <h3 class="text-success">BUY 1 GET 1</h3>
+                            <p class="card-text">Select menu items</p>
+                            <small class="text-muted">Participating restaurants only</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="images/logo.png" alt="The Hungry Haven" height="40">
+                    <p class="mt-3">Delivering delicious meals to your doorstep since 2020.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">About Us</a></li>
+                        <li><a href="#" class="text-white">Careers</a></li>
+                        <li><a href="#" class="text-white">Blog</a></li>
+                        <li><a href="#" class="text-white">Press</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Help</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Contact</a></li>
+                        <li><a href="#" class="text-white">FAQs</a></li>
+                        <li><a href="#" class="text-white">Privacy</a></li>
+                        <li><a href="#" class="text-white">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to get updates on deals and new restaurants.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-success" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 The Hungry Haven. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Made with <i class="fas fa-heart text-danger"></i> for food lovers</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

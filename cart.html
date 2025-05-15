@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - The Hungry Haven</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar (Same as index.html) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="The Hungry Haven" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#restaurants">Restaurants</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="cart.html" class="btn btn-light me-2 position-relative">
+                        <i class="fas fa-shopping-cart"></i> Cart
+                        <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                    </a>
+                    <a href="login.html" class="btn btn-outline-light">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Section -->
+    <section class="py-5">
+        <div class="container">
+            <h1 class="mb-4">Your Cart</h1>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div id="cart-items">
+                                <!-- Cart items will be dynamically inserted here -->
+                                <div class="text-center py-5">
+                                    <i class="fas fa-shopping-cart fa-4x text-muted mb-3"></i>
+                                    <p class="text-muted">Your cart is empty</p>
+                                    <a href="index.html" class="btn btn-success">Browse Restaurants</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Order Summary</h5>
+                            <hr>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Subtotal</span>
+                                <span id="subtotal">$0.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Delivery Fee</span>
+                                <span id="delivery-fee">$3.99</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Tax (8%)</span>
+                                <span id="tax">$0.00</span>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between fw-bold">
+                                <span>Total</span>
+                                <span id="total">$3.99</span>
+                            </div>
+                            <div class="mt-4">
+                                <h6 class="mb-3">Delivery Instructions</h6>
+                                <textarea class="form-control mb-3" rows="3" placeholder="Any special instructions?"></textarea>
+                                
+                                <h6 class="mb-3">Tip Your Driver</h6>
+                                <div class="btn-group w-100 mb-3" role="group">
+                                    <button type="button" class="btn btn-outline-success tip-btn" data-tip="15">15%</button>
+                                    <button type="button" class="btn btn-outline-success tip-btn" data-tip="20">20%</button>
+                                    <button type="button" class="btn btn-outline-success tip-btn" data-tip="25">25%</button>
+                                </div>
+                                
+                                <button id="checkout-btn" class="btn btn-success w-100 py-2" disabled>
+                                    Proceed to Checkout
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <!-- Footer content from index.html -->
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

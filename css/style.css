@@ -1,0 +1,313 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #F3E9F4;
+
+}
+
+/* .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('../images/hero-bg.jpg') center/cover no-repeat;
+    padding: 100px 0;
+} */
+
+/* Cards */
+.category-card, .restaurant-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover, .restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.category-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.restaurant-card img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.deal-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.deal-card:hover {
+    transform: scale(1.05);
+}
+
+/* Game Container */
+.game-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section .lead {
+        font-size: 1rem;
+    }
+}
+
+/* Accessibility Focus Styles */
+a:focus, button:focus, input:focus {
+    outline: 3px solid #ffc107;
+    outline-offset: 2px;
+}
+
+/* Skip to Content Link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+
+/* Game Card Styles */
+.game-card {
+    width: 100%;
+    aspect-ratio: 1;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game-card.flipped {
+    transform: rotateY(180deg);
+}
+
+.game-card.matched {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+.card-front {
+    background-color: #28a745;
+    color: white;
+}
+
+.card-back {
+    background-color: #f8f9fa;
+    transform: rotateY(180deg);
+}
+
+/* Responsive Game Board */
+@media (max-width: 576px) {
+    .game-card {
+        font-size: 1.5rem;
+    }
+}
+
+/* Cart Notification */
+.cart-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    animation: slideIn 0.3s ease-out;
+    z-index: 1000;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.add-to-cart.added {
+    background-color: #218838;
+}
+
+
+/* Game Card Styles */
+.game-card {
+    width: 100%;
+    aspect-ratio: 1;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    perspective: 1000px;
+}
+
+.game-card.flipped {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+.card-front {
+    background-color: #28a745;
+    color: white;
+}
+
+.card-back {
+    background-color: #f8f9fa;
+    transform: rotateY(180deg);
+}
+
+/* Cart Notification */
+.cart-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    animation: slideIn 0.3s ease-out;
+    z-index: 1000;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.add-to-cart.added {
+    background-color: #218838;
+}
+
+/* Cart Page Styles */
+.cart-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.tip-btn.active {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Add to existing style.css */
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.login-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-card .card-body {
+    padding: 2rem;
+}
+
+.login-btn {
+    background-color: #28a745;
+    border: none;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.login-btn:hover {
+    background-color: #218838;
+}
+
+.forgot-password {
+    font-size: 0.9rem;
+}
+
+.signup-link {
+    font-size: 0.9rem;
+}
+
+.form-check-input:checked {
+    background-color: #28a745;
+    border-color: #28a745;
+}
